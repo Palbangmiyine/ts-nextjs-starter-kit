@@ -3,7 +3,6 @@
     "target": "esnext",
     "module": "esnext",
     "jsx": "preserve",
-    "lib": ["dom", "es2017"],
     "moduleResolution": "node",
     "allowJs": true,
     "noEmit": true,
@@ -13,7 +12,10 @@
     "noUnusedParameters": true,
     "removeComments": false,
     "preserveConstEnums": true,
-    "sourceMap": true,
-    "baseUrl": "."
-  }
+    "sourceMap": false,
+    "baseUrl": ".",
+    "lib": ["dom", "es2017"],
+    "typeRoots": ["node_modules/@types", "src/@types"]
+  },
+  "exclude": ["node_modules", "out", ".next"]
 }
